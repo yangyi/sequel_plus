@@ -157,5 +157,5 @@ namespace :sq do
   end
 
   desc 'Drops all tables and recreates the schema from db/schema.rb'
-  task :reset => ['sq:schema:drop', 'sq:schema:load']
+  task :reset => ['sq:schema:drop', 'sq:migrate']
 end
